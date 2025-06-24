@@ -322,17 +322,71 @@ background-size: cover
 # Data
 
 .pull-left[
-* .bam[Airbnb properties] from *AirDNA* via CDRC
+.bam[Active Airbnb properties] from *AirDNA* via CDRC
 
-   * Nov 2014 - May 2018
-   * Property-month observations
-   * Property type
-   * Geolocation
+* Nov 2014 - May 2018
+* Property-month observations
+* Property type
+* Geolocation
    
 ]
 .pull-right[
 
 
+
+]
+
+
+
+---
+count: false
+
+# Data
+
+.pull-left[
+.bam[Active Airbnb properties] from *AirDNA* via CDRC
+
+* Nov 2014 - May 2018
+* Property-month observations
+* Property type
+* Geolocation
+   
+
+Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
+
+* 6 crime types
+* Mix of LSOA counts and approximate geolocation
+
+
+]
+
+
+---
+count: false
+
+# Data
+
+.pull-left[
+.bam[Active Airbnb properties] from *AirDNA* via CDRC
+
+* Nov 2014 - May 2018
+* Property-month observations
+* Property type
+* Geolocation
+   
+
+Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
+
+* 6 crime types
+* Mix of LSOA counts and approximate geolocation
+
+]
+
+.pull-right[
+
+![](img/mopac_logo.png)<br>Public Attitudes Survey (PAS)
+
+* .bam[Collective efficacy]
 
 ]
 
@@ -342,63 +396,37 @@ count: false
 # Data
 
 .pull-left[
-* .bam[Airbnb properties] from *AirDNA* via CDRC
+.bam[Active Airbnb properties] from *AirDNA* via CDRC
 
-   * Nov 2014 - May 2018
-   * Property-month observations
-   * Property type
-   * Geolocation   
-
-* Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
-
-  * 6 crime types
-  * Mix of LSOA counts and approximate geolocation
-
-* Aggregated to **LSOA-quarters**
-
-
-]
-.pull-right[
-
-
-]
-
-
----
-count: false
-
-# Data
-
-.pull-left[
-* .bam[Airbnb properties] from *AirDNA* via CDRC
-
-   * Nov 2014 - May 2018
-   * Property-month observations
-   * Property type
-   * Geolocation
+* Nov 2014 - May 2018
+* Property-month observations
+* Property type
+* Geolocation
    
 
-* Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
+Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
 
-  * 6 crime types
-  * Mix of LSOA counts and approximate geolocation
+* 6 crime types
+* Mix of LSOA counts and approximate geolocation
 
-* Aggregated to **LSOA-quarters**
 
 ]
 .pull-right[
-* MOPAC Public Attitudes Survey
-     * Collective efficacy
 
+![](img/mopac_logo.png)<br>Public Attitudes Survey (PAS)
 
-* Not shown today:
+* .bam[Collective efficacy]
+
+Not shown today:
+
+* PAS:
    * Perceived crime
    * Perceived police patrols
-   * Airbnb usage
-   * Policy instruments
-   * Premier League games
-   * Property prices
-   * Police stops
+* Airbnb usage
+* Policy instruments
+* Premier League games
+* Property prices
+* Police stops
 ]
 
 
