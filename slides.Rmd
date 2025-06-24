@@ -35,6 +35,17 @@ nuff_col <- c("Nuffield Teal"  = "#00a191",
 
 
 
+![](img/crim_paper.png)
+
+???
+
+The paper I'll be talking about today was published back in November in *Criminology* after a lengthy review process.
+
+I started working on it when I was Dave Kirk's postdoc at Oxford's Nuffield College, as indicated by the bottom right logo. Since then, I've moved on to Cambridge and Dave to the University of Pennsylvania.
+
+
+---
+
 
 # The Growth of Airbnb
 
@@ -62,7 +73,9 @@ Barron et al. (2020, p. 45):
 
 The most well-recognized effects are on housing markets, with many studies finding short-term renting reduces the housing supply and drives prices up for both renters and buyers.
 
-This occurs because property owners find it more profitable to operate an Airbnb than offer conventional rentals, and this profitability has lead some Airbnb operators to purchase additional homes---sometimes dozens---to operate full-time Airbnbs.
+This occurs because property owners find it more profitable to operate an Airbnb than offer conventional rentals.
+
+This profitability has lead some Airbnb operators to purchase additional homes---sometimes dozens---to operate full-time Airbnbs.
 
 ---
 # Anti-Social Behaviour
@@ -93,7 +106,7 @@ While Airbnb claims these incidents are exceedingly rare, news media abounds wit
 
 In some markets, like London, Airbnb growth has become extreme: there are neighborhoods where a quarter or more of housing units are dedicated Airbnb properties
 
-We actually estimate as high as 60% in one LSOA in Soho in one quarter.
+We actually estimate as high as 30% in one LSOA in Soho in one quarter.
 
 There are concerns that this concentration is destabilizing communities and changing their character as residents are increasingly transient and anonymous
 
@@ -113,7 +126,7 @@ Based on all that, criminological theory gives us reasons to expect that the pro
 We focus on two theories in this paper
 
 ---
-# Routine Activities Theory
+# Routine Activity Theory
 
 ![](./img/routine_activity.svg)
 
@@ -127,11 +140,11 @@ We focus on two theories in this paper
 
 ???
 
-The first is routine activities theory.
+The first is routine activity theory.
 
-Routine activities theory describes crime as the result of opportunities: convergences of likely offenders and suitable targets in the absence of capable guardians.
+Routine activity theory describes crime as the result of opportunities: convergences of likely offenders and suitable targets in the absence of capable guardians.
 
-When the number of opportunities increases, crime increases immediately.
+This is a fast effect: When the number of opportunities increases, crime increases immediately.
 
 Airbnb properties may contribute to opportunities in a number of ways
 
@@ -161,6 +174,10 @@ Airbnb properties may contribute to opportunities in a number of ways
 
 .centernote[These should be stronger for *entire properties* than *spare rooms*.]
 
+???
+
+In spare rooms, you still have permanent resident monitoring, including of the guest.
+
 ---
 # Social Disorganization
 
@@ -180,9 +197,11 @@ Airbnb properties may contribute to opportunities in a number of ways
 
 The second theory is social disorganization.
 
-Social disorganization is a macro-theory of social control that says that sociodemographic advantage and stability promote social control capacity---often operationalized using collective efficacy as we do in the paper
+Social disorganization is a macro-theory of social control that says that sociodemographic advantage and stability promote social control capacity.
 
-Social control capacity influences criminal opportunity---mainly through guardianship---and tends to be fairly stable over time
+Social capacity is often operationalized using collective efficacy as we do in the paper
+
+This social control capacity influences criminal opportunity---mainly through guardianship---and tends to be fairly stable over time
 
 Based on social disorganization, we expect Airbnb to increase crime mainly by inducing residential instability
 
@@ -202,6 +221,10 @@ Spare rooms only *add* short-term residents
 
 * Less disruptive
 * May promote stability with additional income
+
+--
+
+.centernote[Effects should be stronger for *entire properties* than *spare rooms*.]
 
 ---
 # Causal Model
@@ -272,18 +295,25 @@ We encode these theories into a causal model
 * **U**nobservables (time stable)
 ]
 
+
+???
+
+It looks complicated, but the paths just depict the same relationships I've covered:
+
+Airbnbs increase opportunity in short term, reduce social control in long term
+
+We also assume there are many characteristics of neighborhoods related to crime and Airbnbs, like other land uses, that could confound all of our estimates... but that are somewhat stable over short periods.
+
 ---
 # Hypotheses
 
-1. **Airbnb properties are positively related to crime**
+1. Airbnb properties are positively related to crime
 
-2. **Entire properties will be more strongly related to crime than rooms**
+2. Entire properties will be more strongly related to crime than rooms
 
 3. Airbnb activity will be negatively related to collective efficacy
 
 4. The association between Airbnb activity and crime is partly explained by collective efficacy
-
-.centernote[*I will focus on 1 and 2 today*]
 
 
 ---
@@ -291,10 +321,10 @@ class: inverse
 background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/london.jpg")
 background-size: cover
 
-# Airbnb and London
+# Airbnb in London
 
 ---
-# Airbnb and London
+# Airbnb in London
 
 * One of the most popular Airbnb markets
 
@@ -308,7 +338,7 @@ background-size: cover
 
 --
 
-* Recent policies promote Airbnb usage
+* Policies promote Airbnb activity
 
   * Deregulation Act 2015
 
@@ -360,6 +390,9 @@ Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
 
 ]
 
+???
+
+Robbery, burglary, theft, antisocial behavior, violence, and specifically violence resulting in bodily harm
 
 ---
 count: false
@@ -387,8 +420,18 @@ Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
 ![](img/mopac_logo.png)<br>Public Attitudes Survey (PAS)
 
 * .bam[Collective efficacy]
+* N = 48,093
+
 
 ]
+
+???
+
+The PAS asks 8 questions on cohesion and trust and expectations for social control that have been used to measure collective efficacy in a number of past papers.
+
+The survey is administered to a representative sample 100 respondents in each of the 32 boroughs every quarter, giving 48,000 valid responses over our analysis period.
+
+I'll get into it more later, but this provides reliable estimates of efficacy down to the Ward but not LSOA level.
 
 ---
 count: false
@@ -416,12 +459,12 @@ Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
 ![](img/mopac_logo.png)<br>Public Attitudes Survey (PAS)
 
 * .bam[Collective efficacy]
+* N = 48,093
 
-Not shown today:
+In paper but not shown today:
 
-* PAS:
-   * Perceived crime
-   * Perceived police patrols
+* Perceived crime
+* Perceived police patrols
 * Airbnb usage
 * Policy instruments
 * Premier League games
@@ -436,10 +479,17 @@ Not shown today:
 
 .footnote[Average 39,000 active per month with 4.5 million estimated guests across study period]
 
+???
+
+Highly concentrated around the center of the city and tourist attractions
+
 ---
 
 ![](img/pop-map-1.png)
 
+???
+
+Note that the residential population is much less concentrated around the city centre
 
 ---
 class: inverse
@@ -581,8 +631,13 @@ For the main analysis, we're only interested in total effects of Airbnb on crime
 
 .centernote[*This is a cross-lagged panel model*]
 
+
+???
+
+This simpler model is a type of cross-lagged panel model, specifically one with contemporaneous effects and confounding unobservables.
+
 ---
-# Method: ML-SEM
+# Estimator: ML-SEM
 
 Maximum Likelihood Fixed Effects Cross-Lagged Panel Model (ML-SEM)<sup>1</sup>
 
@@ -593,15 +648,6 @@ Maximum Likelihood Fixed Effects Cross-Lagged Panel Model (ML-SEM)<sup>1</sup>
   * Predetermined regressors
   * Addresses time-stable confounders
 
-* Practical differences
-
-  * Better finite sample performance
-  * Infeasible with large $T$
-  * Gaussian errors
-  * Gets angry about heavy skew
-
-* $N$ = 4835 LSOAs, $T$ = 13 quarters
-
 .pull-right30[
 .footnote[
 [1] Allison et al. (2017)<br>
@@ -609,11 +655,44 @@ Maximum Likelihood Fixed Effects Cross-Lagged Panel Model (ML-SEM)<sup>1</sup>
 ]
 ]
 
+???
+
+I have graphical depictions of the estimator specification that I can bring up in Q&A if anyone wants more detail.
+
+--
+
+* Practical differences
+
+  * Better finite sample performance
+  * Relaxes instrument assumptions
+  * Infeasible with large $T$
+  * Gets angry about heavy skew
+
+
+--
+
+* $N$ = 4835 LSOAs, $T$ = 13 quarters
+
+???
+
+The properties of the estimator lead us to aggregate the data to quarters
+
+Results are unchanged using a monthly Arellano-Bond or two-way fixed effects Poisson.
+
 ---
 
 .image-tall[
 ![](img/quarter-results-1.png)
 ]
+
+???
+
+Our first hypothesis was that Airbnbs impact crime.
+
+Here we see the estimated number of additional crimes we'd see per active Airbnb in the present quarter on the left and per Airbnb active in the last quarter on the right.
+
+The left shows modest positive associations with Robbery, Burglary, Theft, and Violence in the same time period but no appreciable lagged effect.
+
 
 ---
 # Property Types
@@ -647,7 +726,9 @@ Here is the same type of plot again, but now I show only contemporaneous effects
 
 As expected, we see the total association is mainly driven by entire properties---though we see a bit of evidence for private rooms and burglary.
 
-This provides support for our second hypothesis.
+Shared rooms are rare, so estimates there are very noisy.
+
+Anyway, this provides support for our second hypothesis.
 
 ---
 # Summary
@@ -678,9 +759,12 @@ We also find these estimates are quite stable (or robust) across different speci
 
 Effects driven by entire homes and apartments for rent
 
+* Consistent with opportunity as mechanism
+* Consistent with destabilization as mechanism
+
 --
 
-Effects appear operate in short-term
+Effects appear to operate only in short-term
 
 * Suggests opportunity as mechanism
 
@@ -694,7 +778,7 @@ Effects appear operate in short-term
 ---
 count: false
 class: inverse
-background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/onion_airbnb.jpg"), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+background-image: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("img/onion_airbnb.jpg"), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
 background-size: 100%, 50%, 100%
 background-position: center, center, center
 
@@ -834,6 +918,9 @@ count: false
 * **U**nobservables
 ]
 
+--
+
+.centernote[*We need to create a measure of S*]
 
 ---
 count:false
@@ -847,9 +934,9 @@ Collective efficacy is a community-level .bam[latent variable]
 
 Assume informant responses to collective efficacy indicators are a mix of:
 
-* Latent variable we want to measure
+* True latent collective efficacy we want to measure
+* Systematic perceptual error related to demographic background
 * Non-systematic (random) measurement error
-* Systematic perceptual error of individuals
 
 --
 
@@ -879,7 +966,7 @@ count: false
 ![](img/measurement_model_cfa.svg)
 ]
 
-.centernote[*Purge measurement error, obtain individual estimate*]
+.centernote[*Purge random measurement error, obtain individual estimate*]
 
 ---
 count: false
@@ -889,86 +976,9 @@ count: false
 ![](img/measurement_model_hlm.svg)
 ]
 
-.centernote[*Adjust for composition, obtain neighborhood estimate*]
+.centernote[*Adjust for demographic composition, obtain neighborhood estimate*]
 
----
-count: false
-# Specification
 
-.footnote[[1] All covariances hidden for legibility]
-
-.pull-left60[
-.image-100[
-```{tikz sem-dag-2, echo = FALSE,  cache = TRUE, dev = "svg"}
-\usetikzlibrary{positioning,arrows.meta}
-\definecolor{black}{HTML}{000000}
-\definecolor{rose}{HTML}{e9004c}
-\definecolor{cobalt}{HTML}{002f87}
-\definecolor{pine}{HTML}{00665e}
-\definecolor{electric}{HTML}{00acc8}
-\definecolor{burgundy}{HTML}{692044}
-\tikzset{
-    every node/.append style = {
-        draw = none
-    },
-    hidden/.style = {
-        draw = black,
-        shape = circle,
-        inner sep = 1pt
-    }
-}
-\tikz{
-  \node (a1) at (1.2,0) {$A_1$};
-  \node (a2) at (2.2,0) {$A_2$};
-  \node (a3) at (3.2,0) {$A_3$};
-  \node (a4) at (4.2,0) {$A_4$};
-  \node (s1) at (0.80,0) {$S_1$};
-  \node (s2) at (1.80,0) {$S_2$};
-  \node (s3) at (2.80,0) {$S_3$};
-  \node (s4) at (3.80,0) {$S_4$};
-  \node (c1) at (1,2) {$C_1$};
-  \node (c2) at (2,2) {$C_2$};
-  \node (c3) at (3,2) {$C_3$};
-  \node (c4) at (4,2) {$C_4$};
-  \node[hidden] (u) at (0.5,1) {$U$};
-  \path[-stealth, burgundy] (c1) edge (c2);
-  \path[-stealth, burgundy] (c2) edge (c3);
-  \path[-stealth, burgundy] (c3) edge (c4);
-  \path[-stealth, pine] (u) edge (c2);
-  \path[-stealth, pine] (u) edge (c3);
-  \path[-stealth, pine] (u) edge (c4);
-  \path[-stealth, rose] (a1) edge [thick] (c2);
-  \path[-stealth, electric] (a2) edge [thick] (c2);
-  \path[-stealth, rose] (a2) edge [thick] (c3);
-  \path[-stealth, electric] (a3) edge [thick] (c3);
-  \path[-stealth, rose] (a3) edge [thick] (c4);
-  \path[-stealth, electric] (a4) edge [thick] (c4);
-  \path[-stealth, rose] (s1) edge [thick] (c2);
-  \path[-stealth, electric] (s2) edge [thick] (c2);
-  \path[-stealth, rose] (s2) edge [thick] (c3);
-  \path[-stealth, electric] (s3) edge [thick] (c3);
-  \path[-stealth, rose] (s3) edge [thick] (c4);
-  \path[-stealth, electric] (s4) edge [thick] (c4);
-  }
-```
-
-]
-]
-
-.pull-right30[
-
-Outcome (Ct):
-* **Logged** Ward-year crime counts
-
-Features:
-
-* Airbnb and CE:
-  * .electric[Contemporaneous]
-  * .rose[Lagged]
-* .pine[Fixed effects]
-* .burgundy[Autoregression]
-* Predetermined regressors<sup>1</sup>
-]
 
 ---
 count: false
@@ -994,19 +1004,35 @@ Given our models, how should we aggregate data?
 
 --
 
-&zwj;Unit: **Ward-years**
+&zwj;Unit: **Ward half-years**
 
-* High CE reliability: 0.71
-* Few zeroes but high skew in crime
+* High collective efficacy reliability: 0.68
+* Logged crime outcome to address skew
+
+???
+
+We settled on Ward half-years which give reliability similar to past work using collective efficacy
+
+We also ran yearly analyses, which give somewhat stronger collective efficacy and weaker Airbnb effects, but the interpretation is substantively the same.
+
 
 
 ---
 count: false
 
-.image-90[
-![](img/year-results-1.png)
+.image-tall[
+![](img/half-year-results-1.png)
 ]
 
+???
+
+This repeats the LSOA plot from before but the right two columns are contemporaneous and lagged associations of collective efficacy with crime
+
+On the Airbnb to crime left side, the results are substantively identical to the LSOA models; we see a positive contemporaneous association that doesn't go away when accounting for collective efficacy.
+
+On the collective efficacy to crime right side, there is a very modest and only occasionally significant negative association (though again, this is stronger in yearly analyses).
+
+Together this suggest collective efficacy is not explaining the relationship between Airbnbs and crime we're seeing
 
 ---
 count: false
@@ -1016,11 +1042,24 @@ How is Airbnb activity related to collective efficacy?
 
 * Estimate both sides of Airbnb and CE cross-lagged model
 
+???
+
+
+
+There's no free lunch: Estimating both sides does not allow clearly distinguishing the direction of a contemporaneous effect, but it works for the lagged effect where we would expect to see effects
+
 --
 
 .image-90[
 ![](img/abnb-ce-results-1.png)
 ]
+
+???
+
+Results are noisy but suggest a modest negative feedback loop: More Airbnbs are associated with lower collective efficacy over time, but higher efficacy is associated with more Airbnbs---though this is much weaker than the other direction, as our theoretical model implies.
+
+These results are again stronger in yearly models, which probably more accurately match the slow process of neighborhood change.
+
 
 ---
 
@@ -1065,6 +1104,10 @@ Private short-term letting is reshaping the urban landscape
 
 Let's talk about implications.
 
+We already knew Airbnbs are affecting housing markets.
+
+Our results suggest they're also affecting public safety, mainly in terms of instrumental crimes like theft, burglary, and robbery.
+
 --
 
 Short-term letting is highly commercialized
@@ -1101,7 +1144,8 @@ class: inverse
 
 ---
 count:false
-# ML-SEM Specification
+
+# LSOA Quarter Specification
 
 
 .pull-left60[
@@ -1194,7 +1238,85 @@ Outcome (Ct):
 
 
 
+---
+count: false
 
+# Ward Half-Year Specification
+
+.footnote[[1] All covariances hidden for legibility]
+
+.pull-left60[
+.image-100[
+```{tikz sem-dag-2, echo = FALSE,  cache = TRUE, dev = "svg"}
+\usetikzlibrary{positioning,arrows.meta}
+\definecolor{black}{HTML}{000000}
+\definecolor{rose}{HTML}{e9004c}
+\definecolor{cobalt}{HTML}{002f87}
+\definecolor{pine}{HTML}{00665e}
+\definecolor{electric}{HTML}{00acc8}
+\definecolor{burgundy}{HTML}{692044}
+\tikzset{
+    every node/.append style = {
+        draw = none
+    },
+    hidden/.style = {
+        draw = black,
+        shape = circle,
+        inner sep = 1pt
+    }
+}
+\tikz{
+  \node (a1) at (1.2,0) {$A_1$};
+  \node (a2) at (2.2,0) {$A_2$};
+  \node (a3) at (3.2,0) {$A_3$};
+  \node (a4) at (4.2,0) {$A_4$};
+  \node (s1) at (0.80,0) {$S_1$};
+  \node (s2) at (1.80,0) {$S_2$};
+  \node (s3) at (2.80,0) {$S_3$};
+  \node (s4) at (3.80,0) {$S_4$};
+  \node (c1) at (1,2) {$C_1$};
+  \node (c2) at (2,2) {$C_2$};
+  \node (c3) at (3,2) {$C_3$};
+  \node (c4) at (4,2) {$C_4$};
+  \node[hidden] (u) at (0.5,1) {$U$};
+  \path[-stealth, burgundy] (c1) edge (c2);
+  \path[-stealth, burgundy] (c2) edge (c3);
+  \path[-stealth, burgundy] (c3) edge (c4);
+  \path[-stealth, pine] (u) edge (c2);
+  \path[-stealth, pine] (u) edge (c3);
+  \path[-stealth, pine] (u) edge (c4);
+  \path[-stealth, rose] (a1) edge [thick] (c2);
+  \path[-stealth, electric] (a2) edge [thick] (c2);
+  \path[-stealth, rose] (a2) edge [thick] (c3);
+  \path[-stealth, electric] (a3) edge [thick] (c3);
+  \path[-stealth, rose] (a3) edge [thick] (c4);
+  \path[-stealth, electric] (a4) edge [thick] (c4);
+  \path[-stealth, rose] (s1) edge [thick] (c2);
+  \path[-stealth, electric] (s2) edge [thick] (c2);
+  \path[-stealth, rose] (s2) edge [thick] (c3);
+  \path[-stealth, electric] (s3) edge [thick] (c3);
+  \path[-stealth, rose] (s3) edge [thick] (c4);
+  \path[-stealth, electric] (s4) edge [thick] (c4);
+  }
+```
+
+]
+]
+
+.pull-right30[
+
+Outcome (Ct):
+* **Logged** Ward-year crime counts
+
+Features:
+
+* Airbnb and CE:
+  * .electric[Contemporaneous]
+  * .rose[Lagged]
+* .pine[Fixed effects]
+* .burgundy[Autoregression]
+* Predetermined regressors<sup>1</sup>
+]
 
 
 
