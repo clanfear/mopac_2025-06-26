@@ -581,6 +581,8 @@ For the main analysis, we're only interested in total effects of Airbnb on crime
 
 
 ---
+count: false
+
 # Simplified Model
 
 .image-280[
@@ -927,7 +929,7 @@ count: false
 .centernote[*We need to create a measure of S*]
 
 ---
-count:false
+
 # Measuring Collective Efficacy
 
 Collective efficacy is a community-level .bam[latent variable]
@@ -985,7 +987,6 @@ count: false
 
 
 ---
-count: false
 
 # Units of Analysis
 
@@ -1022,7 +1023,6 @@ We also ran yearly analyses, which give somewhat stronger collective efficacy an
 
 
 ---
-count: false
 
 .image-tall[
 ![](img/half-year-results.png)
@@ -1039,7 +1039,7 @@ On the collective efficacy to crime side, there is a weak negative association, 
 Together this suggests collective efficacy is not explaining the relationship between Airbnbs and crime.
 
 ---
-count: false
+
 # Airbnb and Collective Efficacy
 
 How is Airbnb activity related to collective efficacy?
