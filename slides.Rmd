@@ -41,8 +41,7 @@ nuff_col <- c("Nuffield Teal"  = "#00a191",
 
 The paper I'll be talking about today was published back in November in *Criminology* after a lengthy review process.
 
-I started working on it when I was Dave Kirk's postdoc at Oxford's Nuffield College, as indicated by the bottom right logo. Since then, I've moved on to Cambridge and Dave to the University of Pennsylvania.
-
+It is a big paper, so I'll be breezing through it quickly. If you'd like to dig into the details, it is open access, so look it up.
 
 ---
 
@@ -178,7 +177,7 @@ Airbnb properties may contribute to opportunities in a number of ways
 
 ???
 
-In spare rooms, you still have permanent resident monitoring, including of the guest.
+In spare rooms, you still have permanent residents involved in monitoring, including of the guest.
 
 ---
 # Social Disorganization
@@ -201,13 +200,13 @@ The second theory is social disorganization.
 
 Social disorganization is a macro-theory of social control that says that sociodemographic advantage and stability promote social control capacity.
 
-Social capacity is often operationalized using collective efficacy as we do in the paper
+This capacity promotes both direct intervention and calling the police and is often operationalized using collective efficacy as we do in the paper
 
-Collective efficacy being composed of shared expectations that residents will intervene against disorder and crime in the context of social cohesion and trust.
+Collective efficacy consists of shared expectations that residents will intervene against disorder and crime in the context of social cohesion and trust.
 
 This social control capacity influences criminal opportunity---mainly through guardianship---and tends to be fairly stable over time
 
-Based on social disorganization, we expect Airbnb to increase crime mainly by inducing residential instability
+Based on social disorganization, we expect Airbnb to increase crime primarily by inducing residential instability
 
 ---
 ## Airbnb and Social Disorganization
@@ -302,11 +301,13 @@ We encode these theories into a causal model
 
 ???
 
-It looks complicated, but the paths just depict the same relationships I've covered:
+It looks complicated, but the paths just depict the same relationships I've covered, for two time periods:
 
-Airbnbs increase opportunity in short term, reduce social control in long term
+Airbnbs increase crime via opportunity in short term and via social control in long term
 
-We also assume there are many characteristics of neighborhoods related to crime and Airbnbs, like other land uses, that could confound all of our estimates... but that are somewhat stable over short periods.
+The circles indicate variables we can't directly observe, in this case opportunity and social control which mediate (that is serve as mechanisms) for the effect of Airbnb on crime
+
+There are also some unobserved characteristics of neighborhoods related to crime and Airbnbs, like other land uses, that could confound all of our estimates... but we argue the key ones are somewhat stable over short periods.
 
 ---
 # Hypotheses
@@ -566,7 +567,7 @@ background-size: cover
 .pull-right[
 * **O**pportunity
 * **S**ocial control capacity
-* **U**nobservables
+* **U**nobservables (time stable)
 ]
 
 .centernote[*If concerned only with A → C, we can ignore mediators*]
@@ -576,7 +577,7 @@ background-size: cover
 
 Here's the model again.
 
-For the main analysis, we're only interested in total effects of Airbnb on crime, so we can ignore the mediators to get a simpler model.
+For the main analysis, we're only interested in total effects of Airbnb on crime, so we can ignore the unobserved mediators to get a simpler model.
 
 
 
@@ -632,7 +633,7 @@ count: false
 .pull-right[
 * ~~**O**pportunity~~
 * ~~**S**ocial control capacity~~
-* **U**nobservables
+* **U**nobservables (time stable)
 ]
 
 .centernote[*This is a cross-lagged panel model*]
@@ -754,12 +755,12 @@ Okay, let's talk about these results a bit.
 
 We find, per quarter...
 
-... these may seem small in magnitude, but keep in mind many LSOAs have dozens or even upwards of a hundred dedicated Airbnb properties.
+... these may seem small in magnitude, but keep in mind many LSOAs have dozens or even hundreds dedicated Airbnb properties.
 
 
+As we say in the paper, "If the volume of active Airbnb rentals increased by 10% in London from 2018 levels, we would expect that the number of robberies would increase by approximately 1,000 per year, a 3.1% increase from the 32,500 robberies recorded in London in 2018"
 
-We also find these estimates are quite stable (or robust) across different specifications, including different causal timings, Premier league games, spatial clustering, and even excluding Zone 1 of London
-
+We also find these estimates are quite stable (or robust) across different specifications, including different causal timings, accounting for Premier league games or spatial clustering, and even excluding Zone 1 of London
 
 --
 
@@ -964,6 +965,14 @@ count: false
 ![](img/measurement_model.svg)
 ]
 
+???
+
+What we observe are the indicators at the bottom, which are the product of underlying perceived collective efficacy (plus some measurement error).
+
+That perceived collective efficacy is caused by actual neighborhood collective efficacy plus bias related to respondent characteristics (and again, some error).
+
+To get the neighborhood measure, we proceed in two stages.
+
 ---
 count: false
 ## Stage 1
@@ -1060,7 +1069,7 @@ There's no free lunch: Estimating both sides does not allow clearly distinguishi
 
 ???
 
-Results are noisy but suggest a modest negative feedback loop: More Airbnbs are associated with lower collective efficacy over time, but higher efficacy is associated with more Airbnbs---though this is much weaker than the other direction, as our theoretical model implies.
+Results are noisy but suggest a modest negative feedback loop: More Airbnbs are associated with lower collective efficacy over time, but higher efficacy is associated with more Airbnbs---though this is a tenth as strong as the other direction, as our theoretical model implies.
 
 These results are again stronger in yearly models, which probably more accurately match the slow process of neighborhood change.
 
